@@ -1,0 +1,28 @@
+{
+  "name": "midi2srt",
+  "version": "1.0.0",
+  "description": "MIDI → 字幕:把 MIDI 里的歌词时间抠出来,在多轨道时间轴上二次编辑,再导出 SRT / VTT / LRC / 增强 LRC / ASS。零依赖。",
+  "type": "module",
+  "license": "MIT",
+  "author": "yoyo",
+  "keywords": [
+    "midi",
+    "lyrics",
+    "subtitle",
+    "srt",
+    "lrc",
+    "ass",
+    "vtt",
+    "karaoke",
+    "editor",
+    "zero-dependency"
+  ],
+  "scripts": {
+    "start": "node server/server.mjs",
+    "build:static": "node scripts/build-static.mjs",
+    "serve:static": "node scripts/serve-static.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
