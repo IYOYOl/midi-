@@ -1,0 +1,75 @@
+/* theme.css — 深色剪辑软件配色(模块 C) */
+
+:root {
+  color-scheme: dark;
+
+  /* 层次 */
+  --bg-0: #0c0f14;
+  --bg-1: #12171f;
+  --bg-2: #19202a;
+  --bg-3: #212a36;
+  --bg-4: #2a3543;
+
+  --line: #2a3441;
+  --line-strong: #3b4856;
+
+  /* 文字 */
+  --fg-0: #e7eef7;
+  --fg-1: #a9b6c5;
+  --fg-2: #7b8798;
+
+  /* 强调/语义 */
+  --accent: #4ea1ff;
+  --accent-dim: #2b6fb3;
+  --ok: #3fcf8e;
+  --warn: #f2c14e;
+  --err: #ff6b6b;
+  --offline: #9aa7b8;
+
+  /* 时间轴 */
+  --lane: #141a23;
+  --lane-alt: #171e28;
+  --lane-line: #222b36;
+  --grid: #1d242e;
+  --grid-strong: #2b3542;
+  --seg: #2f6fa8;
+  --seg-alt: #3a7f5f;
+  --seg-meta: #6b5d8a;
+  --seg-sel: #4ea1ff;
+  --playhead: #ff5f5f;
+
+  /* 尺寸 */
+  --radius: 6px;
+  --radius-sm: 4px;
+  --gap-1: 4px;
+  --gap-2: 8px;
+  --gap-3: 12px;
+  --toolbar-h: 46px;
+  --statusbar-h: 28px;
+
+  --font: "Segoe UI", "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", system-ui, -apple-system, sans-serif;
+  --mono: ui-monospace, "Cascadia Mono", Consolas, "SFMono-Regular", Menlo, monospace;
+
+  --shadow-1: 0 2px 8px rgba(0, 0, 0, 0.45);
+  --shadow-2: 0 12px 40px rgba(0, 0, 0, 0.6);
+}
+
+/* 语义色工具类(状态灯 / 徽标 / 横幅共用) */
+.is-ok {
+  color: var(--ok);
+}
+.is-warn {
+  color: var(--warn);
+}
+.is-err {
+  color: var(--err);
+}
+.is-offline {
+  color: var(--offline);
+}
+.is-accent {
+  color: var(--accent);
+}
+.muted {
+  color: var(--fg-2);
+}
